@@ -13,3 +13,4 @@ This repository includes material for a course on ROOT based on C++. It features
 * Parallelism and performance considerations
 
 The aim of the course is to show modern C++ usage and best practices, as well as how to integrate those with ROOT code.
+The course assumes basic knowledge of ROOT, that can for example be acquired via https://github.com/root-project/student-course.
