@@ -4,6 +4,7 @@
 
 int main()
 {
+    // Parameter meaning: name, title, number of bins, minimum x, maximum x
     TH1D h{"h", "h", 10, -5, 5};
     h.FillRandom("gaus");
 
