@@ -7,3 +7,8 @@ $: g++ -o <example_basename>.out <example_basename>.cpp $(root-config --cflags -
 $: ./<example_basename>.out
 ```
 
+The `example` programs can also be run with `root` directly as:
+
+```
+$: root -l -b -q <example_basename>.cpp
+```
