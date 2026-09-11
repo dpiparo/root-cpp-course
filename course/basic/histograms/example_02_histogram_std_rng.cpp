@@ -20,4 +20,7 @@ void example_02_histogram_std_rng() {
             << " entries): mean=" << h.GetMean() << " +- " << h.GetStdDev()
             << "\n";
 }
-int main() { example_02_histogram_std_rng(); }
+int main() {
+  example_02_histogram_std_rng();
+  return 0;
+}

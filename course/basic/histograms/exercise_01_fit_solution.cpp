@@ -44,4 +44,6 @@ int main() {
   TCanvas c{"c", "c", 800, 600};
   h.Draw();
   c.SaveAs("exercise_01_fit_solution.png");
+
+  return 0;
 }

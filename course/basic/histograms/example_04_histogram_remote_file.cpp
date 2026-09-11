@@ -24,4 +24,7 @@ void example_04_histogram_remote_file() {
             << "\n";
 }
 
-int main() { example_04_histogram_remote_file(); }
+int main() {
+  example_04_histogram_remote_file();
+  return 0;
+}

@@ -18,4 +18,7 @@ void example_01_interactive_canvas() {
   canvas->Draw();
 }
 
-int main() { example_01_interactive_canvas(); }
+int main() {
+  example_01_interactive_canvas();
+  return 0;
+}

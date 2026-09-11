@@ -12,4 +12,7 @@ void example_01_histogram_simple() {
             << "\n";
 }
 
-int main() { example_01_histogram_simple(); }
+int main() {
+  example_01_histogram_simple();
+  return 0;
+}

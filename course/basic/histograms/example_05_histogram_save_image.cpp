@@ -18,4 +18,7 @@ void example_05_histogram_save_image() {
   c.SaveAs("05_histogram_save_image.png");
 }
 
-int main() { example_05_histogram_save_image(); }
+int main() {
+  example_05_histogram_save_image();
+  return 0;
+}

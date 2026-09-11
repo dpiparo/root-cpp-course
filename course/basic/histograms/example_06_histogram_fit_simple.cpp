@@ -57,4 +57,7 @@ void example_06_histogram_fit_simple() {
   histogram_fit_custom_function();
 }
 
-int main() { example_06_histogram_fit_simple(); }
+int main() {
+  example_06_histogram_fit_simple();
+  return 0;
+}

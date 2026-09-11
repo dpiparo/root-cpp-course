@@ -37,4 +37,7 @@ void example_03_histogram_file() {
   read_histo(histoname, filename);
 }
 
-int main() { example_03_histogram_file(); }
+int main() {
+  example_03_histogram_file();
+  return 0;
+}

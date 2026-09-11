@@ -39,4 +39,7 @@ void example_07_histogram_stack() {
   c.SaveAs("example_07_histogram_stack.png");
 }
 
-int main() { example_07_histogram_stack(); }
+int main() {
+  example_07_histogram_stack();
+  return 0;
+}
