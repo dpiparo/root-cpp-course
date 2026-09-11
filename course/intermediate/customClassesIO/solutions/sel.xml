@@ -1,0 +1,6 @@
+<rootdict>
+  <class name="myVector">
+    <field name="m_mag" transient="true" />
+  </class>
+  <class name="vector<myVector>" />
+</rootdict>
