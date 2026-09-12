@@ -57,7 +57,7 @@ You can also remove the rootmap now. Writing will not work any more: the library
 
 ROOT is also used within the software stacks of HEP experiments. At runtime, these systems can easily end up dealing with hundreds of shared libraries. This is also why ROOT provides such a rich support to deal with shared libraries.
 
-## Reading back from files.
+## Reading back from files
 Now that we have our instances in a ROOT file, we can read them back.
 Write a simple macro or a compiled program to read the file we just wrote, and extract the `myVector` and `std::vector<myVector>` instances from it. You can use the `print()` method to easily inspect the value of the coordinates.
 
@@ -65,7 +65,7 @@ Write a simple macro or a compiled program to read the file we just wrote, and e
 It often happens that the data model needs to be updated. Even after several datasets have been written. For these cases, requiring a so-called *schema evolution*, ROOT provides all the necessary interfaces. In this exercise, we'll see schema evolution in its simplest form: *automatic schema evolution*, without requiring any action from the user.
 
 We'll apply two transformation to our data model:
-1. Add a data member, `mag`, that is a cache for the magnitude of the vector, defaulted to `-1.`
+1. Add a data member, `mag`, that is a cache for the magnitude of the vector, defaulted to `-1`. Make this member `transient`, i.e. not for writing.
 2. Transform the single precision floating point numbers into double precision numbers.
 
 Once the two steps above are complete, new dictionaries and a new library will have to be created. Once this is done
@@ -75,3 +75,9 @@ Write a simple macro or program to read back the file we have just written.
 *Are the double precision floating point numbers representing what was written in single precision?*
 
 If you did not forget to increase the class version via the `ClassDef` pre-processor macro, try to use the previous one and read the file: what is ROOT complaining about?
+
+### Bonus: More about ROOT's Type System
+Let's go back to the evolved class, the one containing a transient data member (`m_mag`).
+We'll now use ROOT's type system, *Meta*, to verify that property.
+
+Write a simple program that (auto)loads the library containing the dictionary for the evolved `myVector`, and, through the interface of `TClass`, get to the `m_mag` data member and verify that it is indeed not persistent.
