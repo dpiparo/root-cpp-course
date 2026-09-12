@@ -2,3 +2,6 @@
 *.root
 *.png
 *.dSYM
+*.pcm
+*.rootmap
+*.tmp
