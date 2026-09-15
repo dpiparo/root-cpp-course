@@ -1,5 +1,4 @@
-# I/O and Dictionaries in Depth
-
+# I/O of Custom Classes
 With this exercise, we will learn how to create custom classes for IO, exercising the dictionary generation in various ways. We will also see schema evolution in action, as well as how the behaviour of ROOT's I/O can be steered with metadata.
 
 ## A minimal data model
