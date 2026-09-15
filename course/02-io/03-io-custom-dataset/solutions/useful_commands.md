@@ -10,4 +10,3 @@ Build the executable
 ```
 clang++ -o main fillRNTuple.cpp fillTree.cpp main.cpp readRNTuple.cpp readTree.cpp sphereRandomGen.cpp `root-config --cflags --libs` -l myVector -L ./
 ```
-ope
